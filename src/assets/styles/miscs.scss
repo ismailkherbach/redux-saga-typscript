@@ -1,0 +1,273 @@
+$white: #ffffff;
+$gray: #eeeeee;
+
+$font: "Roboto";
+$bold: 700;
+$regular: 400;
+$light: 300;
+$border-radius-inputs: 10px;
+$border-radius-button: 15px;
+$border-radius-auth: 20px;
+$auth-shadow: 0px 1px 10px rgba(185, 185, 185, 0.08);
+$shadow: 0px 1px 10px rgba(0, 0, 0, 0.08);
+$box-shadow: 0px 3px 17px rgba(0, 0, 0, 0.08);
+
+.fdc {
+  flex-direction: column;
+}
+.fdcr {
+  flex-direction: column-reverse;
+}
+.fdr {
+  flex-direction: row;
+}
+.fdrr {
+  flex-direction: row-reverse;
+}
+.jcc {
+  justify-content: center;
+}
+.jcfs {
+  justify-content: flex-start;
+}
+.jcfe {
+  justify-content: flex-end;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.jcse {
+  justify-content: space-evenly;
+}
+.aic {
+  align-items: center;
+}
+.aifs {
+  align-items: flex-start;
+}
+.aife {
+  align-items: flex-end;
+}
+.ais {
+  align-items: stretch;
+}
+.aib {
+  align-items: baseline;
+}
+.fww {
+  flex-wrap: wrap;
+}
+
+.flex {
+  display: flex;
+}
+
+@for $i from 0 through 100 {
+  .forder#{$i} {
+    order: #{$i};
+  }
+  .fs#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+@for $i from 0 through 100 {
+  .forder#{$i} {
+    order: #{$i};
+  }
+  .margin-top#{5 * $i} {
+    margin-top: #{5 * $i}px;
+  }
+  .margin-left#{5 * $i} {
+    margin-left: #{5 * $i}px;
+  }
+  .margin-right#{5 * $i} {
+    margin-right: #{5 * $i}px;
+  }
+  .margin-bottom#{5 * $i} {
+    margin-bottom: #{5 * $i}px;
+  }
+  .padding-left#{5 * $i} {
+    padding-left: #{5 * $i}px;
+  }
+  .padding-right#{5 * $i} {
+    padding-right: #{5 * $i}px;
+  }
+}
+
+.blured {
+  -webkit-filter: blur(30px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(300px);
+  filter: blur(30px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.466);
+}
+
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;
+}
+
+.Clight {
+  color: #8ba3ff;
+}
+.Cmain {
+  color: #0026bc;
+}
+.Corange {
+  color: #ff8565;
+}
+.Cred {
+  color: #ff5773;
+}
+.Bold {
+  font-weight: $bold;
+}
+
+.txtc {
+  text-align: center;
+}
+
+.curs_pointer {
+  cursor: pointer;
+}
+.wb-100 {
+  width: 100%;
+}
+.loading-overlay {
+  z-index: 400;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.767);
+  h4 {
+    color: white;
+    margin: 20px;
+  }
+}
+
+.loading-overlay-header {
+  z-index: 400;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 205px;
+  background-color: rgba(0, 0, 0, 0.767);
+  h4 {
+    color: white;
+    margin: 20px;
+  }
+}
+.loading-overlay-table {
+  z-index: 400;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.767);
+  h4 {
+    color: white;
+    margin: 20px;
+  }
+}
+.loading-main-button {
+  width: 50px;
+  height: 50px;
+  border: 4px solid white;
+  border-radius: 50%;
+  border-top-color: #686868;
+  animation: spin 0.5s ease-in-out infinite;
+  -webkit-animation: spin 0.5s ease-in-out infinite;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  z-index: 400;
+}
+.cancel {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  z-index: 200;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.loading-button-overlay {
+  z-index: 1050;
+
+  width: 100%;
+  height: 100%;
+}
+
+.loading-button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid blue;
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 0.5s ease-in-out infinite;
+  -webkit-animation: spin 0.5s ease-in-out infinite;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  position: fixed;
+  z-index: 1;
+}
+
+.loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid blue;
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  position: fixed;
+  z-index: 1;
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.disable-select {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
